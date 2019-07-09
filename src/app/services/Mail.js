@@ -9,7 +9,7 @@ const viewPath = path.resolve(__dirname, '..', 'views', 'emails')
 
 transport.use('compile', hbs({
     viewEngine: exphbs.create({
-        partialsDir: path.resolve(__dirname, viewPath, 'partials')
+        partialsDir: path.resolve(__dirname, '..', 'views', 'emails', 'partials')
     }),
     viewPath,
     extName: '.hbs'
